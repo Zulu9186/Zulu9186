@@ -1,8 +1,6 @@
 import pandas as pd
 import streamlit as st
 
-import time
-
 
 # Data import
 system = pd.read_csv('system2.csv')
