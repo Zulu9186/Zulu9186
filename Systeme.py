@@ -4,11 +4,7 @@ import streamlit as st
 
 # Data import
 system = pd.read_csv('system2.csv')
-#df = pd.read_csv('/Users/brunocatel/WCS/Project 2/df_base_frenchie.csv')
-#df.drop(columns=['Unnamed: 0'], inplace=True)
-#df['newRating'] = (df['numVotes']/(df['numVotes']+25000)) * df['averageRating'] + (25000/(df['numVotes']+25000))* 6.12
-#df = df.sort_values('newRating', ascending=False)
-#df = df.iloc[0:10000,:]
+
 
 # Scrapping
 
@@ -106,8 +102,7 @@ with st.form(key='Recommandation'):
 
 
         with tab2:
-            #filt_movie = system['primaryTitle'] == ''.join(type1)
-            # st.success(f"Recommandations de films similaires à {''.join(type1)} : ", icon="✅")
+            
             st.write(recommand(''.join(type1)))
-            #st.image(image)
+            
 
