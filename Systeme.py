@@ -5,7 +5,7 @@ import time
 
 
 # Data import
-system = pd.read_csv('/Users/brunocatel/WCS/Project 2/system2.csv')
+system = pd.read_csv('system2.csv')
 #df = pd.read_csv('/Users/brunocatel/WCS/Project 2/df_base_frenchie.csv')
 #df.drop(columns=['Unnamed: 0'], inplace=True)
 #df['newRating'] = (df['numVotes']/(df['numVotes']+25000)) * df['averageRating'] + (25000/(df['numVotes']+25000))* 6.12
